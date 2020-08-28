@@ -1,0 +1,539 @@
+
+ <!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  
+    <title>在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算 | 路子多技术博客</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Androw">
+    
+
+    
+    <meta name="description" content="使用我们的字节计算器可以轻松进行不同单位字节之间的转换。一个千字节等于多少个兆字节呢？    在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算                 比特&#x2F;位 bit (b):                             例如: 8796093022208                       字节 byte (B):">
+<meta property="og:type" content="article">
+<meta property="og:title" content="在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算">
+<meta property="og:url" content="http://yoursite.com/2020/08/27/bit-convert/index.html">
+<meta property="og:site_name" content="路子多技术博客">
+<meta property="og:description" content="使用我们的字节计算器可以轻松进行不同单位字节之间的转换。一个千字节等于多少个兆字节呢？    在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算                 比特&#x2F;位 bit (b):                             例如: 8796093022208                       字节 byte (B):">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-27T06:17:39.000Z">
+<meta property="article:modified_time" content="2020-08-27T07:05:46.788Z">
+<meta property="article:author" content="Androw">
+<meta property="article:tag" content="在线,文件大小,转换,bit,bytes,KB,MB,GB,TB">
+<meta name="twitter:card" content="summary">
+
+    
+    <link rel="alternative" href="/atom.xml" title="路子多技术博客" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/author.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/author.jpg">
+    
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 5.1.1"></head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/author.jpg" alt="路子多技术博客" title="路子多技术博客"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="路子多技术博客">路子多技术博客</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+					<li>
+ 					
+						<form class="search" action="http://zhannei.baidu.com/cse/search" target="_blank">
+							<label>Search</label>
+						<input name="s" type="hidden" value=  ><input type="text" name="q" size="30" placeholder="Search"><br>
+						</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2020/08/27/bit-convert/" title="在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算" itemprop="url">在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Androw" target="_blank" itemprop="author">Androw</a>
+		
+  <p class="article-time">
+    <time datetime="2020-08-27T06:17:39.000Z" itemprop="datePublished"> Published 2020-08-27</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div class="entry-content">
+<p>使用我们的字节计算器可以轻松进行不同单位字节之间的转换。一个千字节等于多少个兆字节呢？</p>
+<script language="JavaScript">
+<!--
+function doCalc(flagA)
+{
+   Rels = new Array(1,8,8192,8388608,8589934592,8796093022208);
+   for (i=0;i<Rels.length;i++)
+   {
+        if (i==flagA)
+        {
+            givenValue=document.getElementById(flagA).value.replace(",",".");
+            newVal=eval(givenValue*Rels[i])
+            document.getElementById("0").value=newVal;
+        }
+   }
+   for (i=1;i<Rels.length;i++)
+   {
+        newVal=eval(document.getElementById("0").value/Rels[i]);
+        neg=0;
+        if (newVal < 0)
+        {
+            newVal*=-1;
+            neg=1;
+        }
+        j=0;
+        while (newVal<1 && newVal>0)
+        {
+               j++;
+               newVal*=10;
+        }
+        newVal*=100000;
+        newVal=Math.round(newVal);
+        newVal/=100000;
+        newVal/=Math.pow(10,j);
+        newVal="a"+newVal;
+        cache=0;
+        if (newVal.indexOf("e") != -1)
+        {
+            cache=newVal.substr(newVal.indexOf("e"),5);
+            newVal=newVal.substring(0,newVal.indexOf("e"));
+        }
+        dig=new Array;
+        for (j=1;j<5;j++)
+            dig[j]=newVal.substr(newVal.length-j-1,1);
+        if (dig[1] == 9 && dig[2] == 9 && dig[3] == 9 && dig[4] == 9)
+           {
+                rest=newVal.substring(newVal.indexOf("."),100).length-1;
+                newVal=newVal.substring(1,newVal.length-1);
+                newVal="a"+eval(eval(newVal)+Math.pow(10,-rest+2));
+            }
+       for (j=1;j<5;j++)
+             dig[j]=newVal.substr(newVal.length-j-1,1);
+       if (dig[1] == 0 && dig[2] == 0 && dig[3] == 0 && dig[4] == 0)
+             {
+                 check=0;
+                 for (j=0;j<newVal.length-5;j++)
+                 {
+                      if (newVal.substr(j,1)!=0)
+                          check++;
+                 }
+                 if (check>2)
+                     newVal=newVal.substring(0,newVal.length-1);
+             }
+        if (cache)
+            newVal=newVal+cache;
+        newVal=newVal.substring(1,newVal.length);
+        if (neg)
+            newVal*=-1;
+        document.getElementById(i).value=eval(newVal);
+   }
+}
+// end Conversion: bits and bytes -->
+</script>
+<h2>在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算</h2>
+<form name="flagA">
+  <table align="center" border="0" cellpadding="1" cellspacing="0"> 
+    <tbody><tr>
+      <td align="right"><font size="2">比特/位 bit (b):</font></td>
+      <td>
+          <input id="0" size="20" onchange="doCalc(0)" value="" style="background-color: #FFFFFF">           例如: 8796093022208
+     </td>
+    </tr>
+    <tr>
+      <td align="right"><font size="2">字节 byte (B):</font></td>
+      <td>
+          <input id="1" size="20" onchange="doCalc(1)" value="" style="background-color: #FFFFFF">           例如: 1099511627776
+     </td>
+    </tr>
+    <tr>
+      <td align="right"><font size="2">千字节 kilobyte (KB):</font></td>
+      <td>
+          <input id="2" size="20" onchange="doCalc(2)" value="" style="background-color: #FFFFFF">           例如: 1073741824
+     </td>
+    </tr>
+    <tr>
+      <td align="right"><font size="2">兆字节 megabyte (MB):</font></td>
+      <td>
+          <input id="3" size="20" onchange="doCalc(3)" value="" style="background-color: #FFFFFF">           例如: 1048576
+     </td>
+    </tr>
+    <tr>
+      <td align="right"><font size="2">吉字节 gigabyte (GB):</font></td>
+      <td>
+          <input id="4" size="20" onchange="doCalc(4)" value="" style="background-color: #FFFFFF">           例如:
+     1024</td>
+    </tr>
+    <tr>
+      <td align="right"><font size="2">太字节 terabyte (TB):</font></td>
+      <td>
+          <input id="5" size="20" onchange="doCalc(5)" value="" style="background-color: #FFFFFF"> 
+          例如: 1     </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="right" valign="center">
+<hr>在任何一单元格输入数值，然后点击<b>“计算”</b>按钮 <input value="计算" type="button"> <input value="清空" type="reset" ><br>
+     </td>
+    </tr>
+  </tbody></table>
+</form>
+<h2><strong>字节计算器怎样进行字节至兆字节的转换？</strong></h2>
+<p>要使用我们的<strong>字节计算器</strong>，首先请确定要转换的量：比特<strong>Bit</strong>(b), 字节<strong>Byte</strong>(B), 千字节<strong>Kilobytes</strong>(KB), 兆字节<strong>Megabytes</strong>(MB), 吉字节<strong>Gigabyte</strong>(GB) and 太字节<strong>terabyte</strong>(TB)，以确保计算结果的准确性。进行各种计算机存储量的转换可不是一件简单的事，尤其是在计算一些比较大的数据值时，但是我们的<strong>字节计算器</strong>可以轻松帮你解决这一问题。</p>
+<h2><strong>一个太字节等于多少吉字节，又等于多少兆字节呢？</strong></h2>
+<p>被<strong>字节计算器</strong>转换的计算机数据是在<strong>法定字节转换表</strong>的基础上被计算的，因此，各种单位之间的转换并不是很难。</p>  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/在线-文件大小-转换-bit-bytes-KB-MB-GB-TB/">在线,文件大小,转换,bit,bytes,KB,MB,GB,TB</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://yoursite.com/2020/08/27/bit-convert/" data-title="在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算 | 路子多技术博客" data-tsina="" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+	
+
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">在线文件大小(bit,bytes,KB,MB,GB,TB)单位转换换算</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">字节计算器怎样进行字节至兆字节的转换？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">一个太字节等于多少吉字节，又等于多少兆字节呢？</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+
+
+  
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/在线-文件大小-转换-bit-bytes-KB-MB-GB-TB/" title="在线,文件大小,转换,bit,bytes,KB,MB,GB,TB">在线,文件大小,转换,bit,bytes,KB,MB,GB,TB<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="/2020/08/27/bit-convert/" target="_blank" title="文件大小单位转换">文件大小单位转换</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+  <div class="weiboshow">
+  <p class="asidetitle">Weibo</p>
+    <iframe width="100%" height="119" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=119&fansRow=2&ptype=1&speed=0&skin=9&isTitle=1&noborder=1&isWeibo=0&isFans=0&uid=&verifier=&dpc=1"></iframe>
+</div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> 没有创造力 <br/>
+			</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2020 
+		
+		<a href="/about" target="_blank" title="Androw">Androw</a>
+		
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/jquery.qrcode-0.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
